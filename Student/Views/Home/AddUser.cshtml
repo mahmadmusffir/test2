@@ -1,0 +1,144 @@
+﻿
+@{
+    ViewData["Title"] = "AddUser";
+    Layout = "~/Views/Shared/_Layoutdash.cshtml";
+}
+
+<div class="content" id="content">
+    <div class="col-md-12">
+        <div class="card ">
+            <div class="card-header ">
+                <div class="card-header card-header-primary">
+                    <h4 class="card-title">
+                        Student Registration
+                    </h4>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                   
+                        
+                               
+                                    <div class="col-md-12">
+                                        <div class="card">
+                                            <form>
+                                                <div class="card-body">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="form-group ">
+                                                                <label for="txtsName" class="bmd-label-floating has-label">
+                                                                    Name
+                                                                    *
+                                                                </label>
+                                                                <input type="text" class="form-control " id="txtsName" required name="txtsName">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-md-6">
+                                                            <div class="form-group ">
+                                                                <label for="txtsFName" class="bmd-label-floating has-label">
+                                                                    Father Name
+                                                                    *
+                                                                </label>
+                                                                <input type="text" class="form-control " id="txtsFName" required name="txtsFName">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="form-group ">
+                                                                <label for="txtsPhone" class="bmd-label-floating has-label">
+                                                                    Phone No
+                                                                    *
+                                                                </label>
+                                                                <input type="text" class="form-control" id="txtsPhone" required name="txtsPhone">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-md-6">
+                                                            <div class="form-group ">
+                                                                <label for="txtsEmail" class="bmd-label-floating has-label">
+                                                                    Email
+                                                                </label>
+                                                                <input type="text" class="form-control" email="true" id="txtsEmail" name="txtsEmail">
+                                                                <span class="bmd-help">email@email.com</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div>
+                                                                <label>Select Gender *</label>
+                                                                <div class="form-check">
+                                                                    <label class="form-check-label">
+                                                                        <input class="form-check-input" type="radio" name="exampleRadios" id="sMale" value="Male" checked> Male
+                                                                        <span class="circle">
+                                                                            <span class="check"></span>
+                                                                        </span>
+                                                                    </label>
+                                                                    <label class="form-check-label">
+                                                                        <input class="form-check-input" type="radio" name="exampleRadios" id="sFemale" value="Female"> Female
+                                                                        <span class="circle">
+                                                                            <span class="check"></span>
+                                                                        </span>
+                                                                    </label>
+                                                                </div>
+                                                                <div class="form-check">
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="form-group ">
+                                                                <label for="txtsAddress" class="bmd-label-floating has-label">
+                                                                   Address
+                                                                </label>
+                                                                <input type="text" class="form-control" id="txtsAddress" required name="txtsAddress">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="form-group ">
+                                                                <label for="txtsUsername" class="bmd-label-floating has-label">
+                                                                    Username *
+                                                                </label>
+                                                                <input type="text" class="form-control " id="txtsUsername" name="txtsUsername">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="form-group ">
+                                                                <label for="txtsPassword" class="bmd-label-floating has-label">
+                                                                    Password *
+                                                                </label>
+                                                                <input type="password" class="form-control " id="txtsPassword" name="txtsPassword">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                       
+                                                        
+                                                    </div>
+                                                </div>
+                                            </form>
+                                            <div class="row">
+                                                <div class="col-md-2 ml-auto float-right">
+                                                    <button class="btn btn-primary" id="btnsSubmit">
+                                                        <i class="material-icons" style="margin-top:-19px;">save</i>
+                                                        &nbsp; Save
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+            </div>
+        </div>
+    </div>
+
+<script src="/js/AddUser.js"></script>
+

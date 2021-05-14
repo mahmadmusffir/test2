@@ -1,0 +1,79 @@
+﻿
+@{
+    ViewData["Title"] = "BindStudent";
+    Layout = "~/Views/Shared/_Layoutdash.cshtml";
+}
+
+<div class="content" id="content">
+
+
+
+
+
+    <input type="hidden" value="" id="uuid" />
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-7 col-md-7 col-sm-12">
+                <div class="card">
+                    <div class="card-header card-header-text card-header-info">
+                        <div class="card-text">
+                            <h4 class="card-title">Binding</h4>
+                            <p class="card-category">Attach Student with Course</p>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-9  mr-auto ml-auto">
+                                <select class="selectpicker" id="selectClass" data-live-search="true" name="selectClass" data-width="100%" data-style="select-with-transition" title="Select Course"></select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-9  mr-auto ml-auto">
+                                <select class="selectpicker" id="selectStudent" data-live-search="true" name="selectStudent" data-width="100%" data-style="select-with-transition" title="Select Student"></select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <button class="btn btn-info float-right" id="btnSavebind">
+                                    <i class="material-icons">save</i>
+                                    &nbsp; Save
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-12">
+                <div class="card">
+                    <div class="card-header card-header-tabs card-header-rose">
+                        <h4 class="card-title">Student Detail</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="profile">
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <td>Email</td>
+                                            <td id="stdEmail">Please Select Student.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>PhoneNumber</td>
+                                            <td id="stdPhone">Please Select Student.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Address</td>
+                                            <td id="stdAddress">Please Select Student.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>>
+
+<script src="~/js/BindStudent.js"></script>

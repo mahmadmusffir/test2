@@ -1,0 +1,85 @@
+﻿
+@{
+    ViewData["Title"] = "AddCourse";
+    Layout = "~/Views/Shared/_Layoutdash.cshtml";
+}
+
+
+
+<div class="content" id="content">
+    <div class="col-md-12">
+        <div class="card ">
+            <div class="card-header ">
+                <div class="card-header card-header-primary">
+                    <h4 class="card-title">
+                        Student Registration
+                    </h4>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="row">
+
+
+
+                    <div class="col-md-12">
+                        <div class="card">
+                            <form>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group ">
+                                                <label for="txtsName" class="bmd-label-floating has-label">
+                                                    Course Title
+                                                    *
+                                                </label>
+                                                <input type="text" class="form-control " id="txtCoursetitle" required name="txtCoursetitle">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <div class="form-group ">
+                                                <label for="txtsFName" class="bmd-label-floating has-label">
+                                                    Fee
+                                                    *
+                                                </label>
+                                                <input type="number" class="form-control" id="txtFee" required name="txtFee">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group ">
+                                                <label for="txtsAddress" class="bmd-label-floating has-label">
+                                                    Description
+                                                    (Optional)
+                                                </label>
+                                                <input type="text" class="form-control" id="txtDescription" required name="txtDescription">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+
+
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="row">
+                                <div class="col-md-2 ml-auto float-right">
+                                    <button class="btn btn-primary" id="btnsSubmit">
+                                        <i class="material-icons" style="margin-top:-19px;">save</i>
+                                        &nbsp; Save
+                                    </button>
+                                </div>
+                            </div>
+                            <div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<script src="~/js/AddCourse.js"></script>

@@ -1,0 +1,53 @@
+﻿
+@{
+    ViewData["Title"] = "BindStudentList";
+    Layout = "~/Views/Shared/_Layoutdash.cshtml";
+}
+
+<div class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header card-header-primary">
+                        <h4 class="card-title">Bind Student List</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="material-datatables">
+                                    <table id="datatables" class="table table-striped table-no-bordered table-hover" cellspacing="0" style="width:100%">
+                                        <thead>
+                                            <tr>
+                                                <th>#Id</th>
+                                                <th>Student Name</th>
+                                                <th>Course Title</th>
+                                                <th>Bind DateTime</th>
+                                                <th class="text-right">Actions</th>
+                                            </tr>
+                                        </thead>
+                                        <tfoot>
+                                            <tr>
+                                                <th>#Id</th>
+                                                <th>Student Name</th>
+                                                <th>Course Title</th>
+                                                <th>Bind DateTime</th>
+                                                <th class="text-right">Actions</th>
+                                            </tr>
+                                        </tfoot>
+                                        <tbody id="bindStudentList">
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script src="~/js/BindStudentList.js"></script>

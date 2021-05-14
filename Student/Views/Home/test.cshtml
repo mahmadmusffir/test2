@@ -1,0 +1,453 @@
+﻿
+@{
+    ViewData["Title"] = "test";
+    Layout = "~/Views/Shared/_Layoutdash.cshtml";
+}
+
+<div class="content" id="content">
+
+
+
+
+    <input type="hidden" value="0" id="txtsrno" />
+    <div class="container-fluid">
+        <div class="col-md-11 col-12 mr-auto ml-auto">
+            <!--      Wizard container        -->
+            <div class="wizard-container">
+                <div class="card card-wizard" data-color="rose" id="wizardProfile">
+                    <form action="#" method="">
+                        <!--        You can switch " data-color="primary" "  with one of the next bright colors: "green", "orange", "red", "blue"       -->
+                        <div class="card-header text-center">
+                            <h3 class="card-title">
+                                User Profile
+                            </h3>
+                        </div>
+                        <div class="wizard-navigation">
+                            <ul class="nav nav-pills">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#UserInfo" data-toggle="tab" role="tab">
+                                        User Information Detail
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#userJoining" data-toggle="tab" role="tab" id="JoiningTab">
+                                        User Joining Detail
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#Credential" data-toggle="tab" role="tab" id="CredentialTab">
+                                        Credential
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-body">
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="UserInfo">
+                                    <div class="row justify-content-center">
+                                        <div class="col-sm-4">
+                                            <div class="picture-container">
+                                                <div class="picture">
+                                                    <img class="picture-src" id="EmpPicture1" alt="Profile Picture" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="input-group form-control-lg">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text">
+                                                        <i class="material-icons">face</i>
+                                                    </span>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="txtName" class="bmd-label-floating">Name</label>
+                                                    <input type="text" class="form-control" id="txtName" name="txtName" disabled>
+                                                </div>
+                                            </div>
+                                            <div class="input-group form-control-lg">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text">
+                                                        <i class="material-icons">supervisor_account</i>
+                                                    </span>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="FName" class="bmd-label-floating">Father Name</label>
+                                                    <input type="text" class="form-control" id="FName" name="FName" disabled>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 mt-3">
+                                            <div class="input-group form-control-lg">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text">
+                                                        <i class="material-icons">credit_card</i>
+                                                    </span>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="txtCNIC" class="bmd-label-floating">CNIC</label>
+                                                    <input type="text" class="form-control" id="txtCNIC" name="txtCNIC" disabled>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 mt-3">
+                                            <div class="input-group form-control-lg">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text">
+                                                        <i class="material-icons">email</i>
+                                                    </span>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="txtEmail" class="bmd-label-floating">Email</label>
+                                                    <input type="email" class="form-control" id="txtEmail" name="txtEmail" disabled>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 mt-3">
+                                            <div class="input-group form-control-lg">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text">
+                                                        <i class="material-icons">school</i>
+                                                    </span>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="txtQualification" class="bmd-label-floating">Qualification</label>
+                                                    <input type="text" class="form-control" id="txtQualification" name="txtQualification" disabled>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 mt-3">
+                                            <div class="input-group form-control-lg">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text">
+                                                        <i class="material-icons">assignment</i>
+                                                    </span>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="txtDomicial" class="bmd-label-floating">Domicial</label>
+                                                    <input type="text" class="form-control" id="txtDomicial" name="txtDomicial" disabled>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 mt-3">
+                                            <div class="input-group form-control-lg">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text">
+                                                        <i class="material-icons">date_range</i>
+                                                    </span>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="txtDOB" class="bmd-label-floating">DOB</label>
+                                                    <input type="text" class="form-control" id="txtDOB" name="txtDOB" disabled>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 mt-3">
+                                            <div class="input-group form-control-lg">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text">
+                                                        <i class="material-icons">call</i>
+                                                    </span>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="txtPhone" class="bmd-label-floating">Phone</label>
+                                                    <input type="text" class="form-control" id="txtPhone" name="txtPhone" disabled>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 mt-3">
+                                            <div class="input-group form-control-lg">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text">
+                                                        <i class="material-icons">wc</i>
+                                                    </span>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="txtMartialStatus" class="bmd-label-floating">Martial Status</label>
+                                                    <input type="text" class="form-control" id="txtMartialStatus" name="txtMartialStatus" disabled>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 mt-3">
+                                            <div class="input-group form-control-lg">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text">
+                                                        <i class="material-icons">people</i>
+                                                    </span>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="txtFamilyNo" class="bmd-label-floating">Family No</label>
+                                                    <input type="text" class="form-control" id="txtFamilyNo" name="txtFamilyNo" disabled>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 mt-3">
+                                            <div class="input-group form-control-lg">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text">
+                                                        <i class="material-icons">person</i>
+                                                    </span>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="txtBossName" class="bmd-label-floating">Boss Name</label>
+                                                    <input type="text" class="form-control" id="txtBossName" name="txtBossName" disabled>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 mt-3">
+                                            <div class="input-group form-control-lg">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text">
+                                                        <i class="material-icons">pin_drop</i>
+                                                    </span>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="txtCity" class="bmd-label-floating">City</label>
+                                                    <input type="text" class="form-control" id="txtCity" name="txtCity" disabled>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 mt-3">
+                                            <div class="input-group form-control-lg">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text">
+                                                        <i class="material-icons">person_pin_circle</i>
+                                                    </span>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="txtProvince" class="bmd-label-floating">Province</label>
+                                                    <input type="text" class="form-control" id="txtProvince" name="txtProvince" disabled>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 mt-3">
+                                            <div class="input-group form-control-lg">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text">
+                                                        <i class="material-icons">person_pin</i>
+                                                    </span>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="txtCountry" class="bmd-label-floating">Country</label>
+                                                    <input type="text" class="form-control" id="txtCountry" name="txtCountry" disabled>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <input type="button" class="btn btn-next btn-fill btn-rose btn-wd pull-right" name="btnNext1" id="btnNext1" value="Next">
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="tab-pane" id="userJoining">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 mt-3">
+                                            <div class="input-group form-control-lg">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text">
+                                                        <i class="material-icons">face</i>
+                                                    </span>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="txtNamee" class="bmd-label-floating">Name</label>
+                                                    <input type="text" class="form-control" id="txtNamee" name="txtNamee" disabled>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 mt-3">
+                                            <div class="input-group form-control-lg">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text">
+                                                        <i class="material-icons">supervisor_account</i>
+                                                    </span>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="txtEmployeeType" class="bmd-label-floating">Employee Type</label>
+                                                    <input type="text" class="form-control" id="txtEmployeeType" name="txtEmployeeType" disabled>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 mt-3">
+                                            <div class="input-group form-control-lg">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text">
+                                                        <i class="material-icons">business</i>
+                                                    </span>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="txtDepartment" class="bmd-label-floating">Department</label>
+                                                    <input type="text" class="form-control" id="txtDepartment" name="txtDepartment" disabled>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 mt-3">
+                                            <div class="input-group form-control-lg">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text">
+                                                        <i class="material-icons">flag</i>
+                                                    </span>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="txtSection" class="bmd-label-floating">Section</label>
+                                                    <input type="text" class="form-control" id="txtSection" name="txtSection" disabled>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 mt-3">
+                                            <div class="input-group form-control-lg">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text">
+                                                        <i class="material-icons">brightness_high</i>
+                                                    </span>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="txtDesigination" class="bmd-label-floating">Desigination</label>
+                                                    <input type="text" class="form-control" id="txtDesigination" name="txtDesigination" disabled>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 mt-3">
+                                            <div class="input-group form-control-lg">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text">
+                                                        <i class="material-icons">date_range</i>
+                                                    </span>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="txtJoiningDate" class="bmd-label-floating">Joining Date</label>
+                                                    <input type="text" class="form-control" id="txtJoiningDate" name="txtJoiningDate" disabled>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <input type="button" class="btn btn-previous btn-fill btn-default btn-wd disabled" name="previous" id="btnPrevious" value="Previous">
+                                            <input type="button" class="btn btn-next btn-fill btn-rose btn-wd pull-right" name="next" id="btnNext2" value="Next">
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="tab-pane" id="Credential">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 mt-3">
+                                            <div class="input-group form-control-lg">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text">
+                                                        <i class="material-icons">face</i>
+                                                    </span>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="txteName" class="bmd-label-floating">Name</label>
+                                                    <input type="text" class="form-control" id="txteName" name="txteName" disabled>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 mt-3">
+                                            <div class="input-group form-control-lg">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text">
+                                                        <i class="material-icons">accessible</i>
+                                                    </span>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="txtRole" class="bmd-label-floating">Role</label>
+                                                    <input type="text" class="form-control" id="txtRole" name="txtRole" disabled>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 mt-3">
+                                            <div class="input-group form-control-lg">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text">
+                                                        <i class="material-icons">person</i>
+                                                    </span>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="txtUserName" class="bmd-label-floating">UserName</label>
+                                                    <input type="text" class="form-control" id="txtUserName" name="txtUserName" disabled>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 mt-3">
+                                            <div class="input-group form-control-lg">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text">
+                                                        <i class="material-icons">vpn_key</i>
+                                                    </span>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="txtOldPassword" class="bmd-label-floating">Old Password</label>
+                                                    <input type="password" class="form-control" id="txtOldPassword" name="txtOldPassword">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 mt-3">
+                                            <div class="input-group form-control-lg">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text">
+                                                        <i class="material-icons">vpn_key</i>
+                                                    </span>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="txtNewPassword" class="bmd-label-floating">New Password</label>
+                                                    <input type="password" class="form-control" id="txtNewPassword" name="txtNewPassword">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 mt-3">
+                                            <div class="input-group form-control-lg">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text">
+                                                        <i class="material-icons">vpn_key</i>
+                                                    </span>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="txtConfirmPassword" class="bmd-label-floating">Confirm Password</label>
+                                                    <input type="password" class="form-control" id="txtConfirmPassword" name="txtConfirmPassword">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <input type="button" class="btn btn-previous btn-fill btn-default btn-wd disabled" name="previous" id="btnPrevious" value="Previous">
+                                            <input type="button" class="btn btn-finish btn-fill btn-rose btn-wd pull-right" name="btnSubmit" id="btnSubmit" value="Submit">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+            <!-- wizard container -->
+        </div>
+    </div>
+    </div>
+
